@@ -45,4 +45,21 @@ func main(){
 	for index, value := range nums{
 		fmt.Println(index,value)
 	}
+
+	var x  int64 = 10
+	var y int64 = 20 
+	fmt.Println("Sum of the numbers is", add(x,y))
+	fmt.Println("The value of x is", x)
+
+	//Pointers
+	var xp *int64
+	xp = &x
+	fmt.Println("The value of xp is", xp)
+	xp = &y
+	fmt.Println("The value of xp is", xp)
+}
+
+func add( x int64, y int64) int64 {
+	x = x + 10
+	return x + y
 }
