@@ -41,4 +41,8 @@ func main(){
 	}
 
 	
+	nums := [5]int{ 100, 200, 300, 400, 500}
+	for index, value := range nums{
+		fmt.Println(index,value)
+	}
 }
